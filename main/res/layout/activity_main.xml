@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Name :"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/t1"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/t2"
+            android:gravity="center_vertical"
+            android:maxLength="50"
+            android:text="Name"
+            android:textColor="#54000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+
+            android:text="DOB :"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/t4"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/t3"
+            android:inputType="date"
+            android:text="dd-mm-yyyy"
+            android:textColor="#5C000000" />
+<!--        <DatePicker-->
+<!--            android:id="@+id/t8"-->
+<!--            android:layout_width="325dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:datePickerMode="spinner"-->
+<!--            android:layout_toRightOf="@id/t3"/>-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Gender :"
+            android:textColor="#000000" />
+
+        <RadioGroup
+            android:id="@+id/rag"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/t5"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="196dp"
+                android:layout_height="50dp"
+                android:checked="true"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="196dp"
+                android:layout_height="50dp"
+                android:text="@string/female"
+                />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+
+            android:text="Address :"
+            android:textColor="#000000" />
+
+        <EditText
+
+            android:id="@+id/t7"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/t6"
+            android:background="@null"
+            android:maxLength="200"
+            android:text="Hyderabad"
+            android:textColor="#60000000" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="horizontal"
+
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:backgroundTint="#DF82D324"
+            android:text="@string/save_amp_next"
+            />
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:onClick="next"
+            app:backgroundTint="#DF82D324"
+            android:text="@string/next"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

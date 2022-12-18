@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TechnicalSkills"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="previous"
+        android:text="@string/back"
+        app:backgroundTint="#DF82D324" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Technical Skills :"
+            android:textColor="#000000" />
+
+        <CheckBox
+            android:id="@+id/c1"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="Java"
+            android:layout_below="@+id/t1"/>
+        <CheckBox
+            android:id="@+id/c2"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="C#"
+            android:layout_below="@+id/c1"/>
+        <CheckBox
+            android:id="@+id/c5"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="SQL"
+            android:layout_below="@+id/c2"/>
+        <CheckBox
+            android:id="@+id/c3"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="react"
+            android:layout_below="@+id/c5"/>
+        <CheckBox
+            android:id="@+id/c4"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text=".net"
+            android:layout_below="@+id/c3"/>
+
+        <EditText
+            android:id="@+id/t2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/c4"
+            android:background="#1D000000"
+            android:text="other skills"
+            android:textColor="#54000000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="horizontal"
+
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:backgroundTint="#DF82D324"
+            android:text="@string/save_amp_next"
+            />
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            app:backgroundTint="#DF82D324"
+            android:layout_alignParentRight="true"
+            android:onClick="next"
+            android:text="@string/next"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

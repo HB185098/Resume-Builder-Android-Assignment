@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Educational_Details"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:backgroundTint="#DF82D324"
+        android:onClick="previous"
+        android:text="@string/back"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Qualification :"
+            android:textColor="#000000" />
+        <CheckBox
+            android:id="@+id/c1"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="B.Tech"
+            android:layout_below="@+id/t1"/>
+        <CheckBox
+            android:id="@+id/c2"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="M.Tech"
+            android:layout_below="@+id/c1"/>
+        <CheckBox
+            android:id="@+id/c5"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="MBA"
+            android:layout_below="@+id/c2"/>
+        <CheckBox
+            android:id="@+id/c3"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="B.Tech+M.Tech"
+            android:layout_below="@+id/c5"/>
+        <CheckBox
+            android:id="@+id/c4"
+            android:layout_width="161dp"
+            android:layout_height="50dp"
+            android:text="B.Tech+MBA"
+            android:layout_below="@+id/c3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Percentage(%) :"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/t3"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/t2"
+            android:text="95.0"
+            android:textColor="#6A000000" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+
+            android:text="College :"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/t5"
+            android:layout_width="325dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/t4"
+            android:text="jntu"
+            android:textColor="#6B000000" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="horizontal"
+
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:backgroundTint="#DF82D324"
+            android:text="@string/save_amp_next"
+            />
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:onClick="next"
+            android:text="@string/next"
+            app:backgroundTint="#DF82D324"
+            />
+    </RelativeLayout>
+</LinearLayout>
